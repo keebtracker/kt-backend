@@ -10,7 +10,7 @@ const BuildSchema = new mongoose.Schema({
   originalBuilder: {
     type: String,
   },
-  partList: [{ type: mongoose.Schema.Types.ObjectId, ref: "UserPart" }],
+  partIdList : [{ type: mongoose.Schema.Types.ObjectId, ref: "UserPart" }],
 }, { collection: 'builds-co'});
 
 module.exports = mongoose.model("Build", BuildSchema);

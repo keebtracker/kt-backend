@@ -8,7 +8,7 @@ const UserPartSchema = new mongoose.Schema({
   partId: {
     type: String,
   },
-  buildIds: [{ type: mongoose.Schema.Types.ObjectId, ref: "Build" }],
+  buildIdList: [{ type: mongoose.Schema.Types.ObjectId, ref: "Build" }],
   datePurchased: {
     type: Date,
   },
